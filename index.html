@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vortex Media | High-CTR Creative Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        neonPurple: '#a855f7',
+                        neonCyan: '#06b6d4',
+                        darkBg: '#09090b',
+                        cardBg: '#121216',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .neon-glow-purple {
+            box-shadow: 0 0 25px rgba(168, 85, 247, 0.35);
+        }
+        .neon-glow-cyan {
+            box-shadow: 0 0 25px rgba(6, 182, 212, 0.35);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #06b6d4 0%, #a855f7 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-grid {
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        }
+    </style>
+</head>
+<body class="bg-darkBg text-slate-100 font-sans antialiased bg-grid selection:bg-neonPurple selection:text-white">
+
+    <header class="fixed top-0 left-0 right-0 z-50 bg-darkBg/80 backdrop-blur-md border-b border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="text-xl sm:text-2xl font-extrabold tracking-tight flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-neonCyan animate-pulse"></span>
+                <span>VORTEX<span class="text-gradient">.MEDIA</span></span>
+            </a>
+            
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#services" class="hover:text-neonCyan transition-colors">Services</a>
+                <a href="#portfolio" class="hover:text-neonCyan transition-colors">Portfolio</a>
+                <a href="#pricing" class="hover:text-neonCyan transition-colors">Packages</a>
+                <a href="#testimonials" class="hover:text-neonCyan transition-colors">Proof</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-xl font-semibold text-sm bg-gradient-to-r from-neonCyan to-neonPurple text-white shadow-lg neon-glow-purple hover:opacity-90 transition-all duration-300">
+                    Book a Project
+                </a>
+                <button id="mobile-menu-btn" aria-label="Toggle Menu" class="md:hidden p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-4 pt-2 pb-6 border-b border-slate-800 bg-darkBg/95 backdrop-blur-lg">
+            <div class="flex flex-col gap-4 text-base font-medium">
+                <a href="#services" class="mobile-link text-slate-300 hover:text-neonCyan">Services</a>
+                <a href="#portfolio" class="mobile-link text-slate-300 hover:text-neonCyan">Portfolio</a>
+                <a href="#pricing" class="mobile-link text-slate-300 hover:text-neonCyan">Packages</a>
+                <a href="#testimonials" class="mobile-link text-slate-300 hover:text-neonCyan">Proof</a>
+                <a href="#contact" class="mobile-link inline-block text-center py-3 rounded-xl bg-gradient-to-r from-neonCyan to-neonPurple text-white font-semibold">Book a Project</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative pt-32 pb-20 sm:pt-40 sm:pb-32 overflow-hidden">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-neonPurple/20 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute top-1/3 right-10 w-72 h-72 bg-neonCyan/15 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/90 border border-slate-800 text-xs sm:text-sm font-medium text-slate-300 mb-8 shadow-inner">
+                <span class="w-2 h-2 rounded-full bg-neonCyan animate-ping"></span>
+                <span>AI-Powered Speed • Elite Creator Packaging</span>
+            </div>
+
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight max-w-4xl mx-auto leading-tight sm:leading-none mb-8">
+                We Turn Views Into <span class="text-gradient">Revenue & Scale</span>
+            </h1>
+
+            <p class="text-base sm:text-xl text-slate-400 max-w-2xl mx-auto mb-10 font-normal">
+                Digital creators and brands scale faster with high-CTR YouTube thumbnails, immersive web design, and high-retention video editing workflows.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#portfolio" class="w-full sm:w-auto px-8 py-4 rounded-xl font-bold bg-gradient-to-r from-neonCyan to-neonPurple text-white shadow-lg neon-glow-cyan hover:scale-105 transition-all duration-300">
+                    Explore Showcase
+                </a>
+                <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl font-bold bg-slate-900 border border-slate-800 text-slate-200 hover:bg-slate-800/80 transition-all duration-300">
+                    Secure Your Slot
+                </a>
+            </div>
+
+            <!-- Trust Metrics Bar -->
+            <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 pt-10 border-t border-slate-800/80">
+                <div class="p-4 rounded-2xl bg-cardBg/50 border border-slate-800/50">
+                    <div class="text-2xl sm:text-3xl font-extrabold text-white">45M+</div>
+                    <div class="text-xs sm:text-sm text-slate-400 mt-1">Total Impressions Generated</div>
+                </div>
+                <div class="p-4 rounded-2xl bg-cardBg/50 border border-slate-800/50">
+                    <div class="text-2xl sm:text-3xl font-extrabold text-neonCyan">99.4%</div>
+                    <div class="text-xs sm:text-sm text-slate-400 mt-1">Client Satisfaction</div>
+                </div>
+                <div class="p-4 rounded-2xl bg-cardBg/50 border border-slate-800/50">
+                    <div class="text-2xl sm:text-3xl font-extrabold text-neonPurple">24h</div>
+                    <div class="text-xs sm:text-sm text-slate-400 mt-1">Average Turnaround</div>
+                </div>
+                <div class="p-4 rounded-2xl bg-cardBg/50 border border-slate-800/50">
+                    <div class="text-2xl sm:text-3xl font-extrabold text-white">100%</div>
+                    <div class="text-xs sm:text-sm text-slate-400 mt-1">AI-Optimized Pipelines</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 bg-slate-950/60 border-y border-slate-800/60 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold tracking-widest text-neonCyan uppercase mb-3">Our Core Capabilities</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Built for Maximum Conversion & Retention</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="p-8 rounded-3xl bg-cardBg border border-slate-800/80 hover:border-neonPurple/50 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-neonPurple mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">High-CTR Thumbnails</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Psychology-driven visual packaging crafted with advanced AI and expert design polish to maximize click-through rates.
+                    </p>
+                    <ul class="space-y-2 text-sm text-slate-300 font-medium">
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-neonPurple"></span> A/B testing strategy</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-neonPurple"></span> Custom character rendering</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-neonPurple"></span> 24h rapid delivery</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="p-8 rounded-3xl bg-cardBg border border-slate-800/80 hover:border-neonCyan/50 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-neonCyan mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Modern Web Design</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Sleek, minimalist landing pages and digital portfolios built for speed, responsiveness, and seamless client acquisition.
+                    </p>
+                    <ul class="space-y-2 text-sm text-slate-300 font-medium">
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-neonCyan"></span> Tailwind & responsive layout</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-neonCyan"></span> High conversion funnels</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-neonCyan"></span> Instant setup & deployment</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="p-8 rounded-3xl bg-cardBg border border-slate-800/80 hover:border-neonPurple/50 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-neonPurple mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">High-Retention Editing</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Dynamic pacing, clean sound design, and engaging captions designed to keep audience retention through the roof.
+                    </p>
+                    <ul class="space-y-2 text-sm text-slate-300 font-medium">
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-neonPurple"></span> Short & long-form cuts</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-neonPurple"></span> Kinetic subtitle formatting</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-neonPurple"></span> Seamless sound mixing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <h2 class="text-xs font-bold tracking-widest text-neonCyan uppercase mb-3">Showcase & Portfolio</h2>
+                    <h3 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Recent High-Impact Works</h3>
+                </div>
+                <!-- Filter Tabs -->
+                <div class="flex items-center gap-2 mt-6 md:mt-0 p-1.5 rounded-xl bg-cardBg border border-slate-800">
+                    <button onclick="filterPortfolio('all')" class="tab-btn active px-4 py-2 rounded-lg text-xs font-semibold bg-neonPurple text-white transition-all">All Work</button>
+                    <button onclick="filterPortfolio('thumbnails')" class="tab-btn px-4 py-2 rounded-lg text-xs font-semibold text-slate-400 hover:text-white transition-all">Thumbnails</button>
+                    <button onclick="filterPortfolio('web')" class="tab-btn px-4 py-2 rounded-lg text-xs font-semibold text-slate-400 hover:text-white transition-all">Web Dev</button>
+                </div>
+            </div>
+
+            <!-- Grid Items -->
+            <div id="portfolio-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Item 1: Thumbnail -->
+                <div class="portfolio-item thumbnails group rounded-3xl overflow-hidden bg-cardBg border border-slate-800/80 hover:border-neonCyan/50 transition-all duration-300">
+                    <div class="relative aspect-video overflow-hidden bg-slate-900">
+                        <img src="https://placehold.co/600x338/181820/06b6d4?text=ROBLOX+VIRAL+PACKAGING" alt="Thumbnail Design" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x338/181820/ffffff?text=Image+Load+Error'">
+                        <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-darkBg/80 backdrop-blur-md text-xs font-bold text-neonCyan border border-cyan-500/30">Thumbnail</div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-lg font-bold mb-2">Gaming Channel Packaging Suite</h4>
+                        <p class="text-slate-400 text-sm mb-4">High-CTR design layout utilizing high contrast emotional hooks and clean typography.</p>
+                        <div class="flex items-center justify-between text-xs text-slate-500 font-medium pt-4 border-t border-slate-800">
+                            <span>Client: Yokat Network</span>
+                            <span class="text-neonCyan">+210% CTR Spike</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2: Web Dev -->
+                <div class="portfolio-item web group rounded-3xl overflow-hidden bg-cardBg border border-slate-800/80 hover:border-neonPurple/50 transition-all duration-300">
+                    <div class="relative aspect-video overflow-hidden bg-slate-900">
+                        <img src="https://placehold.co/600x338/181820/a855f7?text=SAAS+LANDING+PAGE" alt="Web Design" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x338/181820/ffffff?text=Image+Load+Error'">
+                        <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-darkBg/80 backdrop-blur-md text-xs font-bold text-neonPurple border border-purple-500/30">Web Dev</div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-lg font-bold mb-2">Dark-Mode Creator Portfolio</h4>
+                        <p class="text-slate-400 text-sm mb-4">Minimalist, lightning-fast landing page built with modern Tailwind CSS frameworks.</p>
+                        <div class="flex items-center justify-between text-xs text-slate-500 font-medium pt-4 border-t border-slate-800">
+                            <span>Client: Nova Agency</span>
+                            <span class="text-neonPurple">99/100 Speed Score</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3: Thumbnail -->
+                <div class="portfolio-item thumbnails group rounded-3xl overflow-hidden bg-cardBg border border-slate-800/80 hover:border-neonCyan/50 transition-all duration-300">
+                    <div class="relative aspect-video overflow-hidden bg-slate-900">
+                        <img src="https://placehold.co/600x338/181820/06b6d4?text=STORYTELLING+REEL" alt="Thumbnail Design" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x338/181820/ffffff?text=Image+Load+Error'">
+                        <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-darkBg/80 backdrop-blur-md text-xs font-bold text-neonCyan border border-cyan-500/30">Thumbnail</div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-lg font-bold mb-2">IRL Storytelling Thumbnail</h4>
+                        <p class="text-slate-400 text-sm mb-4">Expressive character cutout and dramatic composition designed for curiosity loops.</p>
+                        <div class="flex items-center justify-between text-xs text-slate-500 font-medium pt-4 border-t border-slate-800">
+                            <span>Client: Vox IRL</span>
+                            <span class="text-neonCyan">1.2M+ Views</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="py-20 bg-slate-950/60 border-y border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold tracking-widest text-neonPurple uppercase mb-3">Transparent Investment</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Choose Your Scale Package</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Tier 1 -->
+                <div class="p-8 rounded-3xl bg-cardBg border border-slate-800/80 flex flex-col justify-between">
+                    <div>
+                        <div class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Thumbnail Sprint</div>
+                        <div class="text-3xl font-extrabold mb-4">₹2,700 <span class="text-sm font-normal text-slate-400">/ project</span></div>
+                        <p class="text-slate-400 text-sm mb-6">Perfect for creators looking for high-CTR packaging upgrades.</p>
+                        <ul class="space-y-3 text-sm text-slate-300 mb-8">
+                            <li class="flex items-center gap-2"><span class="text-neonCyan">✓</span> 3 High-CTR Thumbnails</li>
+                            <li class="flex items-center gap-2"><span class="text-neonCyan">✓</span> Source files included</li>
+                            <li class="flex items-center gap-2"><span class="text-neonCyan">✓</span> 24h turnaround</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="w-full py-3 rounded-xl font-bold text-center bg-slate-900 border border-slate-800 text-slate-200 hover:bg-slate-800 transition-colors">Select Tier</a>
+                </div>
+
+                <!-- Tier 2 (Featured) -->
+                <div class="p-8 rounded-3xl bg-cardBg border-2 border-neonPurple relative flex flex-col justify-between neon-glow-purple">
+                    <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-neonPurple text-xs font-bold text-white uppercase tracking-wider">Most Popular</div>
+                    <div>
+                        <div class="text-xs font-bold uppercase tracking-wider text-neonPurple mb-2">Creator Growth Pass</div>
+                        <div class="text-3xl font-extrabold mb-4">₹7,500 <span class="text-sm font-normal text-slate-400">/ month</span></div>
+                        <p class="text-slate-400 text-sm mb-6">Comprehensive visual packaging and editing support for active uploaders.</p>
+                        <ul class="space-y-3 text-sm text-slate-300 mb-8">
+                            <li class="flex items-center gap-2"><span class="text-neonPurple">✓</span> 10 Custom Thumbnails / mo</li>
+                            <li class="flex items-center gap-2"><span class="text-neonPurple">✓</span> 4 Video Edit Packages</li>
+                            <li class="flex items-center gap-2"><span class="text-neonPurple">✓</span> Priority 12h delivery</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="w-full py-3 rounded-xl font-bold text-center bg-gradient-to-r from-neonCyan to-neonPurple text-white shadow-md hover:opacity-95 transition-opacity">Select Tier</a>
+                </div>
+
+                <!-- Tier 3 -->
+                <div class="p-8 rounded-3xl bg-cardBg border border-slate-800/80 flex flex-col justify-between">
+                    <div>
+                        <div class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Full Web & Brand</div>
+                        <div class="text-3xl font-extrabold mb-4">₹12,000 <span class="text-sm font-normal text-slate-400">/ build</span></div>
+                        <p class="text-slate-400 text-sm mb-6">Complete digital storefront or landing page overhaul for serious builders.</p>
+                        <ul class="space-y-3 text-sm text-slate-300 mb-8">
+                            <li class="flex items-center gap-2"><span class="text-neonCyan">✓</span> Custom Tailwind Landing Page</li>
+                            <li class="flex items-center gap-2"><span class="text-neonCyan">✓</span> Brand Asset Kit & Logo</li>
+                            <li class="flex items-center gap-2"><span class="text-neonCyan">✓</span> SEO & Speed Optimization</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="w-full py-3 rounded-xl font-bold text-center bg-slate-900 border border-slate-800 text-slate-200 hover:bg-slate-800 transition-colors">Select Tier</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold tracking-widest text-neonCyan uppercase mb-3">Client Feedback</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Trusted By Fast-Growing Creators</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="p-8 rounded-3xl bg-cardBg border border-slate-800/80">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-neonCyan to-neonPurple flex items-center justify-center font-bold text-lg text-white">YK</div>
+                        <div>
+                            <h4 class="font-bold">YoKat Creator</h4>
+                            <p class="text-xs text-slate-400">Gaming Channel Lead</p>
+                        </div>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        "The thumbnail workflow completely changed my channel's CTR. Turnaround was lightning fast and the visual hooks are top-tier."
+                    </p>
+                </div>
+
+                <div class="p-8 rounded-3xl bg-cardBg border border-slate-800/80">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-purple-600 to-cyan-500 flex items-center justify-center font-bold text-lg text-white">NV</div>
+                        <div>
+                            <h4 class="font-bold">Nova Studios</h4>
+                            <p class="text-xs text-slate-400">Digital Agency Founder</p>
+                        </div>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        "Cleanest landing page build we've ever had. Minimalist, dark-mode styling with zero bloat. Highly recommended."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-slate-950/60 border-t border-slate-800/60 relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-xs font-bold tracking-widest text-neonPurple uppercase mb-3">Let's Build</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Secure Your Project Slot</h3>
+                <p class="text-slate-400 text-sm mt-2">Fill out the brief below and we will get back to you within 2 hours.</p>
+            </div>
+
+            <div class="p-8 sm:p-10 rounded-3xl bg-cardBg border border-slate-800/80 shadow-2xl relative">
+                <form id="booking-form" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Your Name</label>
+                            <input type="text" required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-slate-100 focus:outline-none focus:border-neonCyan transition-colors text-sm" placeholder="e.g. Alex Creator">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Email or Discord</label>
+                            <input type="text" required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-slate-100 focus:outline-none focus:border-neonCyan transition-colors text-sm" placeholder="alex@creator.com">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Project Type</label>
+                        <select class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-slate-100 focus:outline-none focus:border-neonCyan transition-colors text-sm">
+                            <option>High-CTR Thumbnails (₹2,700 Sprint)</option>
+                            <option>Creator Growth Pass (₹7,500/mo)</option>
+                            <option>Modern Landing Page (₹12,000 Build)</option>
+                            <option>Custom Video Editing Package</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Project Brief / Details</label>
+                        <textarea rows="4" required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-slate-100 focus:outline-none focus:border-neonCyan transition-colors text-sm" placeholder="Describe your channel, goals, or paste your reference video link..."></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full py-4 rounded-xl font-bold bg-gradient-to-r from-neonCyan to-neonPurple text-white shadow-lg neon-glow-cyan hover:scale-[1.01] transition-all duration-300">
+                        Submit Project Brief
+                    </button>
+                </form>
+
+                <!-- Success notification box (replaces alert) -->
+                <div id="success-msg" class="hidden mt-6 p-4 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-sm text-center font-medium">
+                    🎉 Brief received successfully! We will review your requirements and reach out shortly.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-slate-800/80 bg-darkBg text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>© 2026 Vortex Media. All rights reserved. Built with high-speed systems.</div>
+            <div class="flex items-center gap-6">
+                <a href="#" class="hover:text-neonCyan transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-neonCyan transition-colors">Terms of Service</a>
+                <a href="#" class="hover:text-neonCyan transition-colors">Discord Community</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Portfolio filtering logic
+        function filterPortfolio(category) {
+            const items = document.querySelectorAll('.portfolio-item');
+            const buttons = document.querySelectorAll('.tab-btn');
+
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-neonPurple', 'text-white');
+                btn.classList.add('text-slate-400');
+            });
+            event.target.classList.remove('text-slate-400');
+            event.target.classList.add('bg-neonPurple', 'text-white');
+
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Form submit handler without alert()
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const successBox = document.getElementById('success-msg');
+            const form = document.getElementById('booking-form');
+            form.reset();
+            successBox.classList.remove('hidden');
+            setTimeout(() => {
+                successBox.classList.add('hidden');
+            }, 6000);
+        }
+    </script>
+</body>
+</html>
